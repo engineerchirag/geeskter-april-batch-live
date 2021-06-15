@@ -1,0 +1,102 @@
+h1 {
+  color:brown;
+  margin: 20px;
+}
+
+h3 {
+  color:brown;
+  margin: 20px;
+}
+
+.profile {
+  width: 600px;
+  height: 400px;
+}
+
+.row {
+  padding: 30px 25px 20px 35px;
+}
+
+.project1 {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.project {
+  background-image: url("./../images/cover.png");
+  height: 400px;
+  display: inline-block;
+  width: 450px;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.project:after {
+  content: "";
+  position: absolute;
+}
+
+.project:hover:after {
+  background: rgba(0, 0, 0, 0.6);
+  background-color: red;
+}
+
+.hidden {
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+}
+
+.project:hover .hidden {
+  opacity: 1;
+}
+
+.container {
+  width: 90%;
+  background-color: white;
+}
+
+.html {
+  background-color: green;
+  width: 80%
+}
+
+.css {
+  background-color: green;
+  width: 75%;
+}
+
+.java {
+  background-color: green;
+  width: 90%
+}
+
+.dsa {
+  background-color: green;
+  width: 85%;
+}
+
+.navbar {
+  background-color: rgba(59, 87, 72, 0.6);
+  overflow: hidden;
+  margin: 5px;
+}
+
+.navbar a {
+  color:black;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 5px 10px 0 10px;
+}
+
+.navbar a:hover {
+  background-color: rgba(59, 87, 72, 0.9);
+}
+
+.navbar a:active {
+  background-color: saddlebrown;
+  color: white
+}
