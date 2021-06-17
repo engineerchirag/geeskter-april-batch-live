@@ -11,13 +11,25 @@
       <a href="#profile"> About Me :)</a>
       <a href="#projects"> Projects</a>
       <a href="#skills"> Skills</a>
+      <a href="#contact">Contact Me</a>
+      <a href="#linkedin">LinkedIn</a>
     </div>
 
     <h1>Portfolio</h1>
     <div id="profile">
       <div class="row">
-        <div class="col-sm-6">
-          <img class="profile" src="images/profile.jpg" alt="profile photo">
+        <div class="col-sm-3">
+          <img class="profile" src="images/profile.jpg" alt="profile photo" width="250px" height="200px">
+          <div>
+            <audio controls muted autoplay>
+              <source src="resources/Hello Baby Girl-SoundBible.com-879828213.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+        </div>
+        <div class="col-sm-3">
+            <video width="350px" height="300px" autoplay controls muted>
+              <source src="resources/170609_C_Agra_033.mp4" type="video/mp4">
+            </video>
         </div>
         <div class="col-sm-6">
           <p>
@@ -122,8 +134,43 @@
         </div>
       </div>
     </div>
+
+    <div id="contact">
+      <form action="contact_me.js" id="form">
+        <div class="name">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div>
+          <label for="dob">your dob</label>
+          <input type="date" name="dob" id="dob">
+        </div>
+        <div class="email">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email">
+        </div>
+        <div class="number">
+          <label for="number">Phone Number1</label>
+          <input type="text" name="number" id="number">
+        </div>
+        <div>
+          <label for="relation">Recruiter</label><input type="radio" name="relation" id="relation">
+          <label for="relation">Friend</label><input type="radio" name="relation" id="relation">
+          <label for="relation">Family</label><input type="radio" name="relation" id="relation">
+        </div>
+        <div>
+          <label for="purpose">How may I help you?</label>
+          <textarea cols="10" rows="10" id="purpose"></textarea>
+        </div>
+        <div>
+          <input type="submit" value="Send Me :)">
+          <input type="reset" value="Reset">
+        </div>
+      </form>
+    </div>
+
+    <div id="linkedin">
+      <iframe src="https://www.washingtonpost.com/world/interactive/2021/sri-lanka-cargo-ship-fire-pollution/?utm_source=pocket-newtab-intl-en" title="linkedin" height="400px" width="1200px"></iframe>
+    </div>
   </body>
 </html>
-
-
-

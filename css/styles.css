@@ -8,10 +8,10 @@ h3 {
   margin: 20px;
 }
 
-.profile {
-  width: 600px;
-  height: 400px;
-}
+/* .profile {
+  width: 250px;
+  height: 200px;
+} */
 
 .row {
   padding: 30px 25px 20px 35px;
@@ -99,4 +99,26 @@ h3 {
 .navbar a:active {
   background-color: saddlebrown;
   color: white
+}
+
+#form {
+  margin: 50px;
+  align-items: center;
+
+}
+
+#name {
+  margin: 15px;
+}
+
+.name {
+  margin: 5px 0 10px 35px;
+}
+
+.email {
+  margin: 5px 0 10px 35px;
+}
+
+.number {
+  margin: 5px 0 10px 35px;
 }
