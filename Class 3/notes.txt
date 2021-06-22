@@ -1,0 +1,13 @@
+css specifity
+A, B, C, D -> (n,0,0,0)
+inline -> id -> class -> elements -> body
+
+Assignment 1 - nav bar horizontal
+
+.contact1 #number {
+  display: none;
+}
+.contact1:hover #number{
+  display: block;
+}
+portfolio ->

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nexted Nav Bar</title>
+    <link rel="stylesheet" href="./../Class 3/css/styles.css">
+  </head>
+  <body>
+    <ul id="nav">
+      <li><a href="#">Main</li>
+      <li><a href="#">About</li>
+      <li><a href="#selector2">Contact</a>
+        <ul>
+          <li><a href="#">Contact 1</a>
+            <ul>
+              <li><a href="#">98765432346</a></li>
+              <li><a href="#">85434569988</a></li>
+            </ul></li>
+          <li><a href="#">Contact 2</a></li>
+        </ul>
+      </li>
+    </ul>
+    <h4>Hello </h1>
+    <h1>Understanding CSS</h1>
+    <h5>PseudoElement Selectors</h5>
+    <p class="para clr">
+      What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing
+        and typesetting industry. Lorem Ipsum has been the industry's standard
+        dummy text ever since the 1500s, when an unknown printer took a galley
+        of type and scrambled it to make a type specimen book. It has survived
+        not only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised in the 1960s with
+        the release of Letraset sheets containing Lorem Ipsum passages, and more
+        recently with desktop publishing software like Aldus PageMaker including
+        versions of Lorem Ipsum. Why do we use it? It is a long established fact
+        that a reader will be distracted by the readable content of a page when
+        looking at its layout. The point of using Lorem Ipsum is that it has a
+        more-or-less normal distribution of letters, as opposed to using
+        'Content here, content here', making it look like readable English.
+    </p>
+
+    <h2>Child combinator</h2>
+    <ul>
+      <li id="selector"><p>id</p><p>, class, </p><p>element</p></li>
+      <li>
+        <ul id="combinators">
+          <li class="child1" style="color:blue">
+            child 1
+          </li>
+          <li >
+            child2
+          </li>
+          <ul><li>child combinator</li></ul>
+          <li>
+            child 4
+          </li>
+        </ul>
+        id, class, element</li>
+
+    </ul>
+    <ul class="combinator4 clr">
+      <li id="selector2">id, class, element</li>
+      <li>
+        <h4> Pseudo class selectors - before after, etc</h4>
+        <ul id="combinators2">
+          <li class="child1" style="color:blue">
+            child 1
+          </li>
+          <li class="child2 clr" style="color:blue">
+            child 1
+          </li>
+          <li class="child2" style="color:blue">
+            child 1
+          </li>
+          <li class="child2" style="color:blue">
+            child 1
+          </li>
+          <!-- <li >
+            child2
+          </li>
+          <ul><li>child combinator</li></ul>
+          <li>
+            child 4
+          </li>
+        </ul>
+        id, class, element</li> -->
+    </ul>
+    <h2> Attribute selector</h2>
+    <a href="#" target="_b">a</a>
+    <a href="#">b</a>
+    <a href="#" target="_b">c</a> 
+    <a href="#" target="_l">c</a>
+
+    <img src="./../Class 3/images/cover.png" title="cover image" width="100px" height="100px">
+    <img src="./../Class 3/images/project.jpg" title="image htgh" width="100px" height="100px">
+    <img src="./../Class 3/images/cover.png" title="cover" width="100px" height="100px">
+    <img src="./../Class 3/images/project.jpg" title="image" width="100px" height="100px">
+
+    <h1>understanding trailing elements</h1>
+    <p class="class-one">sdfghjkl</p>
+    <p class="class">sdfghjkl</p>
+    <p class="class-one-two-three">sdfghjkl</p>
+    <p class="classonetwothree">sdfghjkl</p>
+
+    <h1>understanding trailing elements</h1>
+    <p class="trail-one">sdfghjkl</p>
+    <p class="trail">sdfghjkl</p>
+    <p class="trail-one-two-three">sdfghjkl</p>
+    <p class="trailonetwothree">sdfghjkl</p>
+
+    <form action="">
+      <label for="input1">Hey</label>
+      <input type="text" id="input1">
+    </form>
+  </body>
+</html>
+
