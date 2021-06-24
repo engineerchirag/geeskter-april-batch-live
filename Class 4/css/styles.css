@@ -92,6 +92,7 @@ img {
 .main2 {
   display: grid;
   /* grid-template-columns: 100px 300px auto 300px; */
+  grid-template-columns: 100px [navbar] 200px [bar] 20px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   align-content: space-between;
@@ -103,7 +104,8 @@ img {
   grid-area: auto;
   /* justify-items: stretch; */
 
-  /* grid-column-start: navbar 100%; */
+  grid-column-start: navbar 100%;
+  grid-column-end: bar 80%;
 }
 
 p {
