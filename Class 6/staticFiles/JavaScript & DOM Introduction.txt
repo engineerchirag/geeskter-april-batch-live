@@ -1,0 +1,22 @@
+What is JavaScript:
+    1. It is the Programming Language for the Web.
+    2. It can update and change both HTML and CSS.
+    3. It can calculate, manipulate and validate data.
+    4. It also helps in making web pages interactive.
+
+
+What is JavaScript used for:
+    1. Adding interactive behaviour to web page.
+    2. Creating web and mobile applications.
+    3. Building web servers and developing server applications.
+
+Why use JavaScript over other programming languages:
+    1. JavaScript is the only programming language native to the web browser.
+    2. JavaScript is the most popular language.
+    3. There’s a low threshold to get started.
+    4. It’s a fun language to learn.
+
+What is DOM:
+    1. DOM stands for Document Object Model.
+    2. The contents of web applications are rendered on browser DOM.
+    3. The HTML DOM model is conducted as a tree of Objects.

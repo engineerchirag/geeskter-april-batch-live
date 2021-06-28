@@ -1,0 +1,24 @@
+Contents:
+    1. Introduction to JavaScript
+    2. What is DOM
+    3. How to declare a variable in JavaScript
+    4. Different data Types in JavaScript
+    5. Loops
+    6. Conditional operators
+    7. Getting familar with developer tools
+    8. Problems:
+        - Using a loop print all even numbers up to and including n = 10. Don't include 0
+        - Given two arrays of integer. Add up each elements in same position assuming both arrays
+        are of equal length. arr1 = [4, 6, 7] arr2 = [8, 1, 9]
+
+Practice Problems:
+    - Using a loop print all odd numbers up to and including n = 10. Don't include 0
+    - Using a loop output the elements in reverse
+    - Given an array [3, 5, 22, 5,  7,  2,  45, 75, 89, 21, 2]. Output the sum of all their elements // Output => 276
+    - Given two arrays of integer. Add up each elements in same position assuming both arrays
+    are of variable length. Also, print "Cannot add elements" if both arrays are empty.
+        Sample Input 1 - arr1 = [4, 6, 7, 12] arr2 = [8, 1, 9] // Output => 12 7 16 12
+        Sample Input 2 - arr1 = [4, 6, 7, 12, 9, 6] arr2 = [] // Output => 4, 6, 7, 12, 9, 6
+        Sample Input 3 - arr1 = [] arr2 = [] // Output => Cannot add elements
+
+
