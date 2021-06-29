@@ -5,7 +5,7 @@
 */
 
 let nameUsingLet = "John.";
-nanameUsingLetme = "Jane";
+nameUsingLet = "Jane";
 console.log(nameUsingLet);
 
 var nameUsingVar = "Dave";
