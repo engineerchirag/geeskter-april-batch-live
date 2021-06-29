@@ -1,0 +1,13 @@
+Contents:
+	1. Array and methods / operations on array
+		- push
+		- pop
+		- shift
+		- unshift
+		- splice
+		- concat
+		- toString
+        - isArray
+	2. Objects
+	3. Functions
+	4. Develop calculator

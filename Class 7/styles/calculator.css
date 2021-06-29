@@ -1,0 +1,23 @@
+.result {
+  width: 220px;
+  height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: black;
+  color: white;
+  font-weight: bold;
+}
+
+.row {
+  margin: 5px;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  border-color: dodgerblue;
+  background: #0088a9;
+  color: white;
+  cursor: pointer;
+}

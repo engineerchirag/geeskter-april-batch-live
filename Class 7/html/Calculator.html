@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calendar</title>
+    <link rel="stylesheet" href="../styles/calculator.css"></link>
+  </head>
+  <script src="../scripts/calculator.js">
+  </script>
+  <body>
+    <div class="column">
+      <div class="result" id="result"></div>
+      <div class="row">
+        <button onclick="updateScreen(7)">7</button>
+        <button onclick="updateScreen(8)">8</button>
+        <button onclick="updateScreen(9)">9</button>
+        <button onclick="updateScreen(`/`)">/</button>
+      </div>
+      <div class="row">
+        <button onclick="updateScreen(4)">4</button>
+        <button onclick="updateScreen(5)">5</button>
+        <button onclick="updateScreen(6)">6</button>
+        <button onclick="updateScreen(`*`)">*</button>
+      </div>
+      <div class="row">
+        <button onclick="updateScreen(1)">1</button>
+        <button onclick="updateScreen(2)">2</button>
+        <button onclick="updateScreen(3)">3</button>
+        <button onclick="updateScreen(`-`)">-</button>
+      </div>
+      <div class="row">
+        <button onclick="updateScreen(0)">0</button>
+        <button onclick="updateScreen(`.`)">.</button>
+        <button onclick="updateScreen(`+`)">+</button>
+        <button onclick="solve()">=</button>
+      </div>
+      <div class="row">
+        <button onclick="erase()">Delete</button>
+        <button onclick="reset()">Reset</button>
+      </div>
+    </div>
+  </body>
+</html>
