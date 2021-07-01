@@ -1,0 +1,8 @@
+Contents:
+    1. Hoisting
+	- What is hoisting and getting familair with it
+	- Understanding how callstack and global execution context works i.e what happens under the hood in browser when JS is executed
+	- Practice problems
+    2. Scope
+	- What is scope
+	- Understanding different types of scope in JS
