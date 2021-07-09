@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Rubik', sans-serif;
+      }
+      .container {
+        width: 100%;
+        height: 100vh;
+        background-color: #4158d0;
+        background-image: linear-gradient(
+          43deg,
+          #4158d0 0%,
+          #c850c0 46%,
+          #ffcc70 100%
+        );
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .calendar {
+        width: 40%;
+        height: 60%;
+        background-color: #ffffff;
+        box-shadow: 0 0 0.5vw #000000;
+        border-radius: 0.5vw;
+      }
+      .month {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 20%;
+        background-color: #0088a9;
+        color: #ffffff;
+        justify-content: space-evenly;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .weekdays {
+        width: 100%;
+    height: 10%;
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+      }
+      .weekdays div {
+        width: calc(100% - 2vw);
+        display: flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .days {
+        width: 100%;
+    padding: 1.5vw;
+    height: 67%;
+    display: flex;
+    flex-wrap: wrap;
+    transition: background-color 0.2s;
+      }
+      .days div:hover:not(.today) {
+          border: 1px solid #0088a9;
+          border-radius: 10px;
+      }
+      .days div {
+        width: calc(100% / 7);
+        padding: 1vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+      .prev-date,
+      .next-date {
+        opacity: 0.5;
+      }
+      .today {
+        background-color: #0088a9;
+        color: #ffffff;
+        border-radius: 10px;
+      }
+      .prev,
+      .next {
+          cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      window.onload = () => {
+        const date = new Date();
+        const monthDays = document.querySelector(".days");
+        const rerender = () => {
+      const lastDay = new Date(
+        date.getFullYear(),
+        date.getMonth() + 1,
+        0
+      ).getDate(); // 31
+
+      const prevLastDay = new Date(
+        date.getFullYear(),
+        date.getMonth(),
+        0
+      ).getDate(); // 30
+
+      const firstDayIndex =  new Date(
+        date.getFullYear(),
+        date.getMonth(),
+        0
+      ).getDay();
+
+      const lastDayIndex = new Date(
+        date.getFullYear(),
+        date.getMonth() + 1,
+        0
+      ).getDay();
+
+      const nextDays = 7 - lastDayIndex;
+      console.log(firstDayIndex, lastDayIndex, nextDays)
+      const months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+        document.querySelector(".date h1").innerHTML = months[date.getMonth()];
+        document.querySelector(".date p").innerHTML = new Date().toDateString();
+        let days = "";
+        for (let x = firstDayIndex; x > 0; x--) {
+          days += `<div class="prev-date">${prevLastDay - x + 1}</div>`;
+        }
+        for (let i = 1; i <= lastDay; i++) {
+          if (
+            i === new Date().getDate() &&
+            date.getMonth() === new Date().getMonth()
+          ) {
+            days += `<div class="today">${i}</div>`;
+          } else {
+            days += `<div>${i}</div>`;
+          }
+        }
+        for (let j = 1; j <= nextDays; j++) {
+          days += `<div class="next-date">${j}</div>`;
+        }
+        monthDays.innerHTML = days;
+        }
+        document.querySelector(".prev").addEventListener("click", () => {
+            date.setMonth(date.getMonth() - 1)
+            rerender()
+        })
+        document.querySelector(".next").addEventListener("click", () => {
+            date.setMonth(date.getMonth() + 1)
+            rerender()
+        })
+        rerender()
+      };
+    </script>
+    <div class="container">
+      <div class="calendar">
+        <div class="month">
+        <i class="fas fa-caret-left prev"></i>
+          <div class="date">
+            <h1></h1>
+            <p></p>
+          </div>
+          <i class="fas fa-caret-right next"></i>
+        </div>
+        <div class="weekdays">
+          <div>Mon</div>
+          <div>Tue</div>
+          <div>Wed</div>
+          <div>Thu</div>
+          <div>Fri</div>
+          <div>Sat</div>
+          <div>Sun</div>
+        </div>
+        <div class="days"></div>
+    </div>
+  </body>
+</html>

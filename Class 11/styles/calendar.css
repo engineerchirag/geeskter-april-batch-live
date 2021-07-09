@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar {
+  width: 50%;
+  height: 60%;
+  background-color: #ffffff;
+  box-shadow: 0 0 0.5vw;
+  border-radius: 0.5vw;
+}
+
+.month {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: #0088a9;
+  height: 20%;
+  color: #ffffff;
+  text-align: center;
+}
+
+.weekdays {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  height: 5vh;
+  font-weight: bold;
+}
+
+.days {
+  width: 100%;
+  height: 67%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.days div {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  width: calc(100% / 7);
+}
+
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+
+.today {
+  background-color: #0088a9;
+  color: #ffffff;
+  border-radius: 0.5vw;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+}
