@@ -1,0 +1,7 @@
+1. SetTimeout
+2. SetInterval
+3. Webworkers
+4. Promises
+    - pending
+    - fullfilled
+    - rejected
