@@ -1,0 +1,33 @@
+body {
+  background-color: #f3f3f3;
+  margin-top: 20px;
+  color: #616f80;
+  font-family: 'Rubik', sans-serif;
+}
+
+.float-right {
+  float: right;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.search-card {
+  padding: 15px;
+}
+
+.avatar-xl {
+    width: 2.3rem;
+    height: 2.3rem;
+}
+
+.progress {
+    height: 5px;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
