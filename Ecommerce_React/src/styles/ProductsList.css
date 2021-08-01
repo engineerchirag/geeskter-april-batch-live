@@ -1,0 +1,12 @@
+.products-list-container,
+.products-list {
+  padding: 1vw;
+}
+
+.products-list-container span {
+  font-size: xx-large;
+}
+
+hr {
+  width: 10%;
+}
