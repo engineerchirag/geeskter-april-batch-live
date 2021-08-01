@@ -1,0 +1,14 @@
+1. Develop simple Todo App
+	Features Required: 
+		- Add a todo
+		- Delete a todo
+		- Toggle todos using Checkbox(Completed / Not Completed).
+
+2. Develop Calculator
+	Features:
+		- You can add your own features as per requirement.
+        
+3. UI to display filtered results from search
+		- Display list of items (You can use any list like information about user, books, songs, etc)
+		- Add search input on top
+		- On searching display results that mathches item in list
