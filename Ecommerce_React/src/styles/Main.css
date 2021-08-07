@@ -1,3 +1,10 @@
 .searchbar {
   width: 50vw;
 }
+
+.alert {
+  width: 90%;
+  margin: 0.5vw;
+  justify-content: center;
+  align-items: center;
+}

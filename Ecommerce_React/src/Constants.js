@@ -3,9 +3,18 @@ const logoUrl =
 
 const logoAlt = "Logo";
 
+const addToCartButtonMessage = "Add to Cart";
+
 const getAllProductsEndpoint = "https://fakestoreapi.com/products";
 
 const productsListHeaderTitle = "Products";
+
+const cartHeaderTitle = "Cart";
+
+const noCartItemsMessage = "Your cart is empty";
+
+const cartItemExistsMessage =
+  "Cannot add product as it already exists in cart.";
 
 const productCategories = [
   {
@@ -33,13 +42,11 @@ const productCategories = [
 const carsourelImages = [
   {
     name: "Image 1",
-    imageUrl:
-      "https://i.imgur.com/eiIXOJN.png",
+    imageUrl: "https://i.imgur.com/eiIXOJN.png",
   },
   {
     name: "Image 2",
-    imageUrl:
-      "http://soliloquywp.com/wp-content/uploads/2019/02/nb_pss_2.jpg",
+    imageUrl: "http://soliloquywp.com/wp-content/uploads/2019/02/nb_pss_2.jpg",
   },
 ];
 
@@ -50,4 +57,8 @@ export {
   carsourelImages,
   getAllProductsEndpoint,
   productsListHeaderTitle,
+  addToCartButtonMessage,
+  cartHeaderTitle,
+  noCartItemsMessage,
+  cartItemExistsMessage,
 };

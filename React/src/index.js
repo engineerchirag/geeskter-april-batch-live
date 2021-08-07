@@ -8,7 +8,11 @@ import "./index.css";
 // import PropsDemo from "./props/PropsDemo";
 // import Counter from "./states/Counter";
 // import ConditionalRender from "./conditionalRendering.js/ConditionalRender";
-import ListAndKeys from "./ListAndKeys/ListAndKeys";
+// import ListAndKeys from "./listAndKeys/ListAndKeys";
+// import LifeCycle from "./lifeCycleMethods/LifeCycle";
+// import RefDemo from "./ref/RefDemo";
+// import ControlledComponent from "./controlledComponent/ControlledComponent";
+import UncontrolledComponent from "./uncontrolledComponent/UncontrolledComponent";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
@@ -20,7 +24,11 @@ ReactDOM.render(
     {/* <PropsDemo /> */}
     {/* <Counter /> */}
     {/* <ConditionalRender /> */}
-    <ListAndKeys />
+    {/* <ListAndKeys /> */}
+    {/* <LifeCycle /> */}
+    {/* <RefDemo /> */}
+    {/* <ControlledComponent /> */}
+    <UncontrolledComponent />
   </React.StrictMode>,
   document.getElementById("root")
 );
