@@ -1,0 +1,11 @@
+.category-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 1vw;
+}
+
+.category-header-button {
+    margin-right: 2vw;
+}

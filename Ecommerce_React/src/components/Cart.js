@@ -4,13 +4,19 @@ import {
   faShoppingCart,
   faMinus,
   faPlus,
+  faTimesCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import { Modal, Button, ListGroup } from "react-bootstrap";
-import { cartHeaderTitle, noCartItemsMessage } from "../Constants";
+import {
+  cartHeaderTitle,
+  noCartItemsMessage,
+  cartActions,
+  priceTitle,
+} from "../Constants";
 import "../styles/Cart.css";
 
 function Cart(props) {
-  const { cartItems } = props;
+  const { cartItems, updateCartItems, iconColor } = props;
   const [showCartItems, setShowCartItems] = useState(false);
 
   let handleClose = () => setShowCartItems(false);
@@ -23,14 +29,14 @@ function Cart(props) {
         <FontAwesomeIcon
           icon={faShoppingCart}
           size={"2x"}
-          color={"#ffffff"}
+          color={iconColor || "#ffffff"}
           onClick={handleShow}
         />
         <span>
           <b>{cartItems.length}</b>
         </span>
       </div>
-      <Modal show={showCartItems} onHide={handleClose} >
+      <Modal show={showCartItems} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>{cartHeaderTitle}</Modal.Title>
         </Modal.Header>
@@ -45,8 +51,19 @@ function Cart(props) {
                   <span>
                     <b>{item.title}</b>
                   </span>
+                  <br />
+                  <span>
+                    <b>
+                      {priceTitle}: ${item.price * item.quantity}
+                    </b>
+                  </span>
                   <div className="cart-item-product-count">
-                    <Button variant="primary">
+                    <Button
+                      variant="primary"
+                      onClick={() =>
+                        updateCartItems(index, cartActions.addItem)
+                      }
+                    >
                       <FontAwesomeIcon
                         icon={faPlus}
                         size={"x"}
@@ -54,11 +71,29 @@ function Cart(props) {
                       />
                     </Button>
                     <span>
-                      <b>{0}</b>
+                      <b>{item.quantity || 0}</b>
                     </span>
-                    <Button variant="danger">
+                    <Button
+                      variant="danger"
+                      onClick={() =>
+                        updateCartItems(index, cartActions.subtractItem)
+                      }
+                    >
                       <FontAwesomeIcon
                         icon={faMinus}
+                        size={"x"}
+                        color={"#ffffff"}
+                      />
+                    </Button>
+                    <Button
+                      className="remove-cart-item-button"
+                      variant="secondary"
+                      onClick={() =>
+                        updateCartItems(index, cartActions.deleteItem)
+                      }
+                    >
+                      <FontAwesomeIcon
+                        icon={faTimesCircle}
                         size={"x"}
                         color={"#ffffff"}
                       />

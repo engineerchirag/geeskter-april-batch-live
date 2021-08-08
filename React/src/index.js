@@ -12,7 +12,10 @@ import "./index.css";
 // import LifeCycle from "./lifeCycleMethods/LifeCycle";
 // import RefDemo from "./ref/RefDemo";
 // import ControlledComponent from "./controlledComponent/ControlledComponent";
-import UncontrolledComponent from "./uncontrolledComponent/UncontrolledComponent";
+// import UncontrolledComponent from "./uncontrolledComponent/UncontrolledComponent";
+// import Main from "./renderProps/Main";
+// import Main from "./context/Main";
+import ReactRouterDemo from "./reactRouterDom/ReactRouterDemo";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
@@ -28,7 +31,15 @@ ReactDOM.render(
     {/* <LifeCycle /> */}
     {/* <RefDemo /> */}
     {/* <ControlledComponent /> */}
-    <UncontrolledComponent />
+    {/* <UncontrolledComponent /> */}
+
+    {/* RenderPropsMain */}
+    {/* <Main /> */}
+
+    {/* ContextMain */}
+    {/* <Main /> */} 
+
+    <ReactRouterDemo />
   </React.StrictMode>,
   document.getElementById("root")
 );
