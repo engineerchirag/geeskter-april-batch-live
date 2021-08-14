@@ -15,7 +15,10 @@ import "./index.css";
 // import UncontrolledComponent from "./uncontrolledComponent/UncontrolledComponent";
 // import Main from "./renderProps/Main";
 // import Main from "./context/Main";
-import ReactRouterDemo from "./reactRouterDom/ReactRouterDemo";
+// import ReactRouterDemo from "./reactRouterDom/ReactRouterDemo";
+// import StyledComponent from "./styledComponents/StyledComponent";
+// import CssModule from "./cssModules/CssModule";
+import Wrapper from "./reactLoadable/Wrapper"
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
@@ -39,7 +42,10 @@ ReactDOM.render(
     {/* ContextMain */}
     {/* <Main /> */} 
 
-    <ReactRouterDemo />
+    {/* <ReactRouterDemo /> */}
+    {/* <StyledComponent /> */}
+    {/* <CssModule /> */}
+    <Wrapper />
   </React.StrictMode>,
   document.getElementById("root")
 );
