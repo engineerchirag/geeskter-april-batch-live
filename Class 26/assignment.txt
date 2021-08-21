@@ -1,0 +1,19 @@
+Ques 1  Read from dummy.js line by line, and print with a "**" at the end
+
+like this
+hey
+hey there
+hello
+helloooo
+
+heyyyy
+
+
+hiiiiii
+
+Ques 2
+Use os module to see how much memory is available/free
+
+
+Ques 3
+If nodejs is single threaded, what/why is multithreading?
