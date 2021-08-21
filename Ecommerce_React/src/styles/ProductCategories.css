@@ -1,0 +1,20 @@
+.product-category {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 0.5vw;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.product-category span {
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

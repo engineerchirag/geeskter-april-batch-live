@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/Ecommerce.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png"
+            alt=""
+            width="30"
+            height="24"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbar-contents" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Delivery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+          </ul>
+          <form class="d-flex search-bar">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-primary" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+          <div class="action-icons">
+            <i class="fas fa-shopping-cart text-primary fa-2x"></i>
+            <i class="fas fa-user text-primary fa-2x"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-2">
+      <img
+        class="rounded img-fluid"
+        src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/banners/1.jpg"
+        alt=""
+        width="100%"
+      />
+      <div class="card mt-2">
+        <div class="card-body info-container">
+          <div class="col-md-4 m-0.5">
+            <i class="fas fa-shopping-cart text-primary fa-2x"></i>
+            <h6>Fast Delivery</h6>
+            <p class="text-muted">
+              Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore
+            </p>
+          </div>
+          <div class="col-md-4 m-0.5">
+            <i class="fas fa-university text-primary fa-2x"></i>
+            <h6>Creative Strategy</h6>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod
+            </p>
+          </div>
+          <div class="col-md-4 m-0.5">
+            <i class="fas fa-lock text-primary fa-2x"></i>
+            <h6>Highly Secured</h6>
+            <p class="text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod
+            </p>
+          </div>
+        </div>
+      </div>
+      <h3 class="mt-4">Popular Products</h3>
+      <div class="row">
+        <div class="card col-md-3 product-card">
+          <img
+            src="	https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/1.jpg"
+            class="card-img-top"
+            alt=""
+          />
+          <p class="card-title"><b>T-Shirt</b></p>
+          <div class="card-text product-text">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p class="text-muted review">34 reviews</p>
+          <h6 class="product-price">$179.00</h6>
+        </div>
+        <div class="card col-md-3 product-card">
+          <img
+            src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/2.jpg"
+            class="card-img-top"
+            alt=""
+          />
+          <p class="card-title"><b>Jacket</b></p>
+          <div class="card-text product-text">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p class="text-muted review">34 reviews</p>
+          <h6 class="product-price">$279.00</h6>
+        </div>
+        <div class="card col-md-3 product-card">
+          <img
+            src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/3.jpg"
+            class="card-img-top"
+            alt=""
+          />
+          <p class="card-title"><b>Trouser</b></p>
+          <div class="card-text product-text">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p class="text-muted review">34 reviews</p>
+          <h6 class="product-price">$200.00</h6>
+        </div>
+        <div class="card col-md-3 product-card">
+          <img
+            src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/4.jpg"
+            class="card-img-top"
+            alt=""
+          />
+          <p class="card-title"><b>Bag</b></p>
+          <div class="card-text product-text">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p class="text-muted review">34 reviews</p>
+          <h6 class="product-price">$100.00</h6>
+        </div>
+      </div>
+
+      <h3 class="mt-4">New Arrived</h3>
+      <div class="row">
+        <div class="card col-md-3 product-card">
+          <img
+            src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/5.jpg"
+            class="card-img-top"
+            alt=""
+          />
+          <p class="card-title"><b>Laptop Cover</b></p>
+          <div class="card-text product-text">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p class="text-muted review">34 reviews</p>
+          <h6 class="product-price">$179.00</h6>
+        </div>
+        <div class="card col-md-3 product-card">
+          <img
+            src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/6.jpg"
+            class="card-img-top"
+            alt=""
+          />
+          <p class="card-title"><b>Sofa</b></p>
+          <div class="card-text product-text">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p class="text-muted review">34 reviews</p>
+          <h6 class="product-price">$279.00</h6>
+        </div>
+        <div class="card col-md-3 product-card">
+          <img
+            src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/7.jpg"
+            class="card-img-top"
+            alt=""
+          />
+          <p class="card-title"><b>Watch</b></p>
+          <div class="card-text product-text">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p class="text-muted review">34 reviews</p>
+          <h6 class="product-price">$200.00</h6>
+        </div>
+        <div class="card col-md-3 product-card">
+          <img
+            src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/items/9.jpg"
+            class="card-img-top"
+            alt=""
+          />
+          <p class="card-title"><b>Headphone</b></p>
+          <div class="card-text product-text">
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="fas fa-star text-warning"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p class="text-muted review">34 reviews</p>
+          <h6 class="product-price">$100.00</h6>
+        </div>
+      </div>
+    </div>
+    <div class="brands bg-light mt-2">
+      <h4>Our Brands</h4>
+      <div class="brand-info">
+        <div class="card col-sm-2 m-1">
+          <img
+            src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/logos/logo1.png"
+            class="card-img-top"
+          />
+          <hr />
+          <div class="card-body companies">
+            <p class="card-text">36</p>
+            <p class="card-text">Products</p>
+          </div>
+        </div>
+        <div class="card col-sm-2 m-1">
+          <img
+            src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/logos/logo2.png"
+            class="card-img-top"
+          />
+          <hr />
+          <div class="card-body companies">
+            <p class="card-text">980</p>
+            <p class="card-text">Products</p>
+          </div>
+        </div>
+        <div class="card col-sm-2 m-1">
+            <img
+              src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/logos/logo3.png"
+              class="card-img-top"
+            />
+            <hr />
+            <div class="card-body companies">
+              <p class="card-text">25</p>
+              <p class="card-text">Products</p>
+            </div>
+          </div>
+          <div class="card col-sm-2 m-1">
+            <img
+              src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/logos/logo4.png"
+              class="card-img-top"
+            />
+            <hr />
+            <div class="card-body companies">
+              <p class="card-text">75</p>
+              <p class="card-text">Products</p>
+            </div>
+          </div>
+          <div class="card col-sm-2 m-1">
+            <img
+              src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/logos/logo5.png"
+              class="card-img-top"
+            />
+            <hr />
+            <div class="card-body companies">
+              <p class="card-text">41</p>
+              <p class="card-text">Products</p>
+            </div>
+          </div>
+          <div class="card col-sm-2 m-1">
+            <img
+              src="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/logos/logo2.png"
+              class="card-img-top"
+            />
+            <hr />
+            <div class="card-body companies">
+              <p class="card-text">12</p>
+              <p class="card-text">Products</p>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="footer bg-light mt-2">
+      <div class="row">
+        <p class="text-muted">
+          <i class="fa fa-copyright" aria-hidden="true"></i> 2019 Comapnay Name
+        </p>
+        <p class="text-muted">sampleEmail@email.com</p>
+        <p class="text-muted">+91-1234567890</p>
+      </div>
+    </div>
+  </body>
+</html>

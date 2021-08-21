@@ -1,0 +1,91 @@
+.ecommerce-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.search-bar {
+  width: 500px;
+}
+
+.action-icons {
+  color: #fff;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+  .action-icons {
+    margin-top: 1vh;
+    width: 80px;
+  }
+}
+
+.navbar-contents {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* width: 100%; */
+}
+
+.item-info {
+  width: calc(100% / 3);
+  margin: 0.5vw;
+}
+
+.product-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.product-card p {
+  margin: 0px !important;
+}
+
+.brands {
+    height: auto;
+    padding: 50px;
+}
+
+.brand-info {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  width: auto !important;
+}
+
+.companies {
+    border: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.companies p {
+    margin: 0px !important;
+}
