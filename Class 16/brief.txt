@@ -1,0 +1,7 @@
+app.js/server.js  -> create server
+routes.js  ->  defining which req url to send at what place
+controller -> actually defining actions after routed(sending responses)
+data(db)
+
+1. npm init -y  (pcg.json)
+2. server, routes, controllers, datafiles

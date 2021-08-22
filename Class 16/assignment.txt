@@ -1,0 +1,5 @@
+1. create a GET request and list all students
+2. create a GET request for teachers in the same routes folder and write controller actions for it
+(NOTE -  you can choose to have different db files or same)
+3. Create a POST request for teacher and student
+4. Deleting student route
