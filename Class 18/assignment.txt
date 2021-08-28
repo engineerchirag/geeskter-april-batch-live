@@ -1,0 +1,5 @@
+1. Design coding platform
+    a. Design high level architecture of a coding platform
+    b. Write routes/endpoints for the coding platform
+    c. Write database design/schema (if storing in object format, mention keys)
+
