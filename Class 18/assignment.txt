@@ -3,3 +3,27 @@
     b. Write routes/endpoints for the coding platform
     c. Write database design/schema (if storing in object format, mention keys)
 
+2. Refactor code into controllers, routes and index(take reference from Class 17 - Book My Show)
+3. Cancel Booking
+4. Complete ride
+5. Refactor function from index to commonfunction.js(updateDrivers, updateRide)
+
+driver - CRUD, (id, name, status-(unavailable, in-ride, available), next_available_time)
+passenger - (id, name, mobile, location)
+ride - (id, start_time, end_time, driver_id, end_location, start_location, 
+        ride_cost, booking_id, status(created, started, ended))
+booking - (id, passenger_id, location_current, start_time, 
+            end_time, end_location, start_location, created_at, booking_cost, 
+            status - (created, cancelled, assigned))
+
+
+<job> -> when booking assigned to a driver -> change status to assigned
+passenger(start_location, end_location)
+     ->create booking -> look for available drivers -> assign random driver -> driver-unavailable
+passenger -> cancel booking -> check status of booking ==assigned -> inform rider -> ride cancelled, 
+                                                        ==created -> status - cancelled
+driver starts ride-> start the ride -> create ride(passenger_id, start_location) ->booking status-assigned
+       -> status of driver (-in-ride) + next_available_time = Booking(booking_id).end_time
+driver ends ride -> status of driver (available) -> ride ->(end_time, end_location, status(ended))
+
+
