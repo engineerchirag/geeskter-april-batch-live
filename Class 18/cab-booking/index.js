@@ -1,13 +1,32 @@
 const express = require('express')
 const app = express()
 const port = process.env.PORT
-const fs = require('fs')
+module.exports = fs = require('fs')
+const find_ride = require('./commonFunction')
+
 let drivers = []
-fs.readFile('./data.js', (err, data) => {
+let bookings = []
+let rides = []
+
+fs.readFile('./db/drivers.js', (err, data) => {
   if(err) {
     console.log("Unable to open file data.js")
   } else {
     drivers = JSON.parse(data)
+  }
+})
+fs.readFile('./db/bookings.js', (err, data) => {
+  if(err) {
+    console.log("Unable to open file booking.js")
+  } else {
+    bookings = JSON.parse(data)
+  }
+})
+fs.readFile('./db/rides.js', (err, data) => {
+  if(err) {
+    console.log("Unable to open file rides.js")
+  } else {
+    rides = JSON.parse(data)
   }
 })
 
@@ -83,3 +102,122 @@ app.delete('/drivers', (req, res) => {
   })
 })
 
+app.post('/bookings', (req, res) =>{ 
+  let current_booking = req.body.booking
+  let booking_details = bookings
+  let booking_index = (bookings.length == 0)? 1: (bookings[bookings.length - 1].id + 1)
+  current_booking['id'] = booking_index
+
+  booking_details.push(current_booking)
+
+  fs.writeFile('./db/bookings.js', JSON.stringify(booking_details), (err1, data1) => {
+    if (err1) {
+      let response = {
+        "message": "Error created booking. Please try again later"
+      }
+      res.write(response)
+      console.log("Unable to create bookings data file")
+    } else {
+      let response = {
+        "data": booking_details, 
+        "message": "Successfully created booking"
+      }
+      res.write(JSON.stringify(response))
+    }
+  })
+})
+
+app.get('/bookings', (req, res) => {
+  let booking_id = parseInt(req.query.id)
+
+  let response = {}
+  for (let b in bookings) {
+    if (bookings[b]['id'] == booking_id) {
+      let ride = find_ride(booking_id)
+
+      if(ride) {
+        response = {
+          "message": "Driver assigned successfully", 
+          "data": ride
+        }
+        res.write(JSON.stringify(response))
+      } else {
+        response = {
+          "message": "Unable to create ride"
+        }
+        res.write(JSON.stringify(response))
+      }
+    } else {
+      response = {
+        "message" : "Invalid booking id"
+      }
+    }
+  }
+  response = {
+    "message": "No bookings at present"
+  }
+  res.end()
+})
+
+app.put('/rides', (req, res) => {
+  let ride_id = parseInt(req.query.id)
+  let updated_drivers = []
+  let updated_rides = []
+
+  let response = {
+    "message": "Success"
+  }
+  res.write("")
+
+  for (let r in rides) {
+    let ride = rides[r]
+
+    if(ride_id == ride.id) {
+      let driver = null
+      ride.status = 'started'
+      ride['start_time'] = Date.now
+      updated_rides.push(ride)
+    
+      for(let d in drivers) {
+        if(drivers[d]['id'] == ride['driver_id']) {
+          driver = drivers[d]
+          drivers[d].status = 'in-ride'
+          updated_drivers.push(drivers[d])
+        } else {
+          updated_drivers.push(drivers[d])
+        }
+        updateDrivers(updated_drivers)
+      }
+      response.message = "Ride Started successfully"
+      response.data = {ride:ride, driver:driver}
+      res.write(JSON.stringify(response))
+    } else {
+      updated_rides.push(ride)
+      response.message = "Ride not found. PLease check the ride id"
+      res.write(JSON.stringify(response))
+    }
+  }
+  updateRide(updated_rides)
+  res.end()
+})
+
+function updateDrivers(updated_drivers) {
+  fs.writeFile('./db/drivers.js', JSON.stringify(updated_drivers), (err, data) => {
+    if(err) {
+      console.error("Error updating drivers")
+    } else { 
+      console.log("Drivers updated successfully")
+    }
+  })
+}
+
+function updateRide(updated_rided) {
+  fs.writeFile('./db/rides.js', JSON.stringify(updated_rided), (err, data) => {
+    if(err) {
+      console.log("err")
+      return null
+    } else {
+      console.log("ride updated"+JSON.stringify(updated_rided))
+    }
+  })
+}
