@@ -1,0 +1,7 @@
+1. design schema for accepting request as - 
+
+    - employee: {
+        "pan_number" : "",
+        "name": "",
+        "phone": ""
+    }

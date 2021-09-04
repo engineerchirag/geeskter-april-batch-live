@@ -1,0 +1,44 @@
+CORS- cross
+client -> login -> (u,p) -> 
+
+google.com/attendance
+
+
+google.com/login    ->    (google server)
+error code - > response codes -> rest vs soap
+
+200 - success 
+404 -> bad request
+
+
+success 
+200 - OK
+201 - created
+202 - accepted
+204 - No content
+
+304 - Not modified
+
+404 - req wrong/ req wrong
+401 - unauthorized
+403 - forbidden ||  authentication error
+422 - unprocessable
+408 - timeout
+413 - size of request too large
+
+500 - internal server error
+501 - Not implemented
+502 - bad gateway
+503 - service unavailble
+511 - network auth
+
+
+
+upload files -> blob mysql - feedback
+admin -> math 
+db -> sync (0.02sec) -> credit card 5sec -> req timeout
+
+get movies - /movies -> data: "", status: 
+PUT - show(4-6 -> 6-8)
+admin1 -> (4-6) - > 200,{message: 'Show updated sucessfully'}
+admin2 -> 6-8() --->  304,{}
