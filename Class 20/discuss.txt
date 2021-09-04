@@ -1,0 +1,12 @@
+authorisation ->  login -> username, password
+authentication -> 20 min 
+
+login(unm, pwd, expire20mins) -> (token) -> 
+createBooking auth(token) + movies(body)
+token -> decrypt -> {username, pwd expire} -> Session expired
+{username, password} -> token 
+
+
+(token) - (secret).(data).(signature)
+
+<username>
