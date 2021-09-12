@@ -1,0 +1,16 @@
+Ques 1. Create a cluster on atlas mongodb cloud, create db for your selected project, create collections after 
+        finalising the end points. 
+
+Ques 2. Use the same cluster, create new database, name it as 'geekster', set options as size 2, max 1, chapped true
+ 
+Ques 3. Create collection students, define one id on your own, which will be integer incremental enter 
+        data as - 
+        id   name    age  marks(object -{subject_name: marks})  
+
+Ques 4: Find the middle 5 students who have marks > 90 in science
+      
+
+
+
+mongosh "mongodb+srv://cluster0.aubc2.gcp.mongodb.net/myFirstDatabase" --username kanikadawar5
+pwd - 12345

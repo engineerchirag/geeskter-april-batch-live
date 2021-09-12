@@ -1,0 +1,22 @@
+
+Mongodb
+// object -> json ->bson ->string, number, array, objects, locations,
+//  - no definite structure
+//  - multiple indexes
+
+//  array - O(n)
+//  hashmaps - key, value - O(1)
+//  {"name":"Kanika"},{"name":'Bhuva', "age":24}, {"phone":"9876543456"}
+
+// - replicas - fail proof
+// database -> 2 replicas
+// 2 machines -> 512 GB, 512GB -> 1TB
+// cluster
+// schema - > age integer, name varchar
+// collection -> [cname]->required(name, string )
+// table-collection, rows- documents, values - fields, database- database, cluster
+// mongosh, compass/atlass, cloud
+
+
+// db.createCollection()
+
